@@ -7,13 +7,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: #e9e9e9;
-}
-
-header {
-    text-align: center;
-}
+/* Styling */
 
 .bold {
     font-weight: bold;
@@ -31,177 +25,214 @@ header {
     padding-left: 12em;
 }
 
+/* HOME */
+
+body {
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+}
+
 .home-image {
     width: 100%;
     height: 20em;
     object-fit: cover;
 }
 
-/* nav bar */
+@media screen and (min-width:540px) { 
 
-nav {
-    width: 100%;
-    height: 2em;
-    position: relative;
-    background-color: #ffc400;
-    margin:-0.5em auto 2em;
+    /* NAV BAR */
+
+    nav {
+        background-color: #ffc400;
+        width: 100%;
+        height: 2em;
+        position: relative;
+        margin:-0.5em auto 2em;
+    }
+    
+    nav a {
+        color: #bd8100;
+    }
+    
+    nav a:hover {
+        height:2em;
+        color: #fff;
+    }
+    
+    nav ul {
+        width: 30em;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav li {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    nav ul li:hover {
+        background-color: #fdd03e;
+    }
+    
+    h1 {
+        font-size: 4em;
+    }
+    
+    /* PROFILE */
+    
+    .box {
+        background-color: yellow;
+        width: 100%;
+        margin: 3em auto;
+        display: flex;
+        justify-content: center;
+        gap:1em;
+    }
+    
+    /* PROFILE LEFT SIDE */
+    
+    .profile-pic {
+        background-color: red;
+        display: flex;
+        align-items: center;
+    }
+    
+    .profile-pic img {
+        width: 200px;
+        height: 220px;
+        border-radius: 50%;
+        border: 0.5em solid #ffc400;
+        object-fit:cover;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    /* PROFILE RIGHT SIDE */
+    
+    .info {
+        background-color: red;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    
+    .current-statut,
+    .last-statut {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1em 2em;
+    }
+    
+    .current-statut p,
+    .last-statut p {
+        display: inline-block;
+        padding-bottom: 0.5em;
+    }
+    
+    .item {
+        padding-right:2em;
+    }
+    
+    .learn {
+        width: 90%;
+        margin: 0 auto;
+        padding: 2px 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:2em;
+    }
+    
+    .it-skills {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        gap:0.5em;
+    }
+    
+    .knowledge,
+    .tools {
+        width: 50%;
+        display: flex;
+        padding: 0.5em;
+        align-items: center;
+        flex-direction: column;
+        gap:0.5em;
+    }
+    
+    .learn p,
+    .knowledge p,
+    .tools p {
+        text-align: left;
+    }
+    
+    .logo {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .current-statut,
+    .learn,
+    .knowledge,
+    .tools,
+    .last-statut {
+        border-radius: 6px;
+    }
+    
+    .current-statut {
+        background-color: green;
+    }
+    
+    .learn {
+        background-color: brown;
+    }
+    
+    .knowledge {
+        background-color: aqua;
+    }
+    
+    .tools {
+        background-color: pink;
+    }
+    
+    .last-statut {
+        background-color: purple;
+    }
+    
+    /* FOOTER */
+    
+    footer {
+        background-color: #e2e1e1;
+        color: #000;
+        width: 100%;
+        height: 3em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-small;
+    }
+    
+    .easter-egg {
+        color: #e2e1e1;
+    }
+    .easter-egg:hover {
+        color: #000;
+        font-size: small;
+    }
+    
 }
 
-nav a {
-    color: #bd8100;
-}
 
-nav a:hover {
-    height:2em;
-    color: #fff;
-}
-
-nav ul {
-    width: 30em;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav li {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-}
-
-nav ul li:hover {
-    background-color: #fdd03e;
-}
-
-h1 {
-    font-size: 4em;
-}
-
-/* Profile */
-
-.box {
-    background-color: yellow;
-    width: 100%;
-    margin: 3em auto;
-    display: flex;
-    justify-content: center;
-}
-
-.profile-pic {
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right:2em;
-    padding-left:2em;
-}
-
-.profile-pic img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit:cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.info {
-    background-color: red;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    gap: 0.5em;
-}
-
-.current-statut,
-.last-statut {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1em 2em;
-}
-
-.current-statut p,
-.last-statut p {
-    display: inline-block;
-    padding-bottom: 0.5em;
-}
-
-.item {
-    width: 22%;
-}
-
-.item-1 {
-    width: 75%;
-}
-
-.learn {
-    width: 80%;
-    margin: 0 auto;
-    padding: 2px 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:2em;
-}
-
-.it-skills {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    gap:0.5em;
-}
-
-.knowledge,
-.tools {
-    width: 50%;
-    display: flex;
-    padding: 0.5em;
-    align-items: center;
-    flex-direction: column;
-    gap:0.5em;
-}
-
-.learn p,
-.knowledge p,
-.tools p {
-    text-align: left;
-}
-
-.logo {
-    width: 38px;
-    height: 38px;
-}
-
-.current-statut,
-.learn,
-.knowledge,
-.tools,
-.last-statut {
-    border-radius: 6px;
-}
-
-.current-statut {
-    background-color: green;
-}
-
-.learn {
-    background-color: brown;
-}
-
-.knowledge {
-    background-color: aqua;
-}
-
-.tools {
-    background-color: pink;
-}
-
-.last-statut {
-    background-color: purple;
-}
 
