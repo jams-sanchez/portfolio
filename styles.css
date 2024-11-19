@@ -8,19 +8,19 @@
 }
 
 body {
-    background-color: #0F0F0F;
+    background-color: #f0f0f0;
 }
 
 .bold {
     font-weight: bold;
 }
 
-.pad-right {
-    padding-right: 4em;
+.italic {
+    font-style: italic;
 }
 
-.pad-left {
-    padding-left: 10em;
+.indent {
+    padding-left: 12em;
 }
 
 .home-image {
@@ -34,20 +34,23 @@ body {
 
 nav {
     width: 100%;
-    background-color:#444444;
+    position: absolute;
+    background-color: #ffc400;
+    margin:-0.5em auto;
     height: 2em;
 }
 
 nav a {
-    color: #959595;
+    color: #bd8100;
 }
 
 nav a:hover {
+    height:2em;
     color: #fff;
 }
 
 nav ul {
-    width: 20em;
+    width: 30em;
     height: 100%;
     margin: auto;
     display: flex;
@@ -63,37 +66,38 @@ nav li {
     align-content: center;
 }
 
-nav li:hover {
-    background-color: #333333;
-    color: #fff;
+nav ul li:hover {
+    background-color: #fdd03e;
 }
+
 
 /* Profile */
 
 .box {
-    background-color: yellow;
-    width: 80em;
+    width: 100%;
     margin: 4em auto;
     display: flex;
+    justify-content: center;
 }
 
 .profile-pic {
-    background-color: yellowgreen;
-    width: 40%;
+    width: 30%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding-right:2em;
+    padding-left:2em;
 }
 
 .profile-pic img {
     width: 300px;
-    height:300px;
+    height: 300px;
     border-radius: 50%;
     object-fit:cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .info {
-    background-color: red;
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -104,23 +108,37 @@ nav li:hover {
 .name-box,
 .current-statut,
 .last-statut {
-    width: 70%;
-    margin: auto;
+    width: 80%;
+    margin: 1em auto;
     padding: 1em 2em;
 }
 
 .name-box {
-    background-color: blue;
+    background-color: #fff;
     border-radius: 10px;
-    height: 8em;
+}
+
+.name-box p,
+.current-statut p,
+.last-statut p {
+    display: inline-block;
+    padding-bottom: 0.5em;
+}
+
+.item {
+    width: 22%;
+}
+
+.item-1 {
+    width: 75%;
 }
 
 .current-statut {
-    background-color: green;
-    border-radius: 10px;
+    background-color: #dddddd;
+    border-radius: 6px;
 }
 
 .last-statut {
-    background-color: violet;
-    border-radius: 10px;
+    background-color: #bbbbbb;
+    border-radius: 4px;
 }
