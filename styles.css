@@ -7,6 +7,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: #2b2b2b;
+}
+
 /* Styling */
 
 .bold {
@@ -25,11 +29,15 @@
     padding-left: 12em;
 }
 
-/* HOME */
-
-body {
-    background-color: #2b2b2b;
+.portfolio-separation {
+    display: none;
+    width: 100%;
+    height: 4px;
+    background-color: #97c5e0;
+    border:none;
 }
+
+/* HEADER */
 
 header {
     text-align: center;
@@ -51,7 +59,7 @@ label, #toggle {
 nav {
     background-color: #ffc400;
     width: 100%;
-    height: 2em;
+    height: 3em;
     position: relative;
     margin:-0.5em auto 2em;
 }
@@ -62,11 +70,11 @@ nav a {
     color: #bd8100;
     text-align: center;
     align-content: center;
+    font-size: x-large;
 }
     
 nav a:hover {
     background-color: #fdd03e;
-    height:2em;
     color: #fff;
 }
 
@@ -83,6 +91,11 @@ h1 {
     font-size: 4em;
 }
 
+h4 {
+    color: #ffc400;
+}
+
+/* ------ HOME PAGE ------ */
 /* PROFILE */
 
 .box {
@@ -93,7 +106,7 @@ h1 {
     gap:1em;
 }
 
-/* PROFILE LEFT SIDE */
+/* Profile left side */
 
 .profile-pic {
     display: flex;
@@ -109,7 +122,7 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* PROFILE RIGHT SIDE */
+/* Profile right side */
 
 .info {
     width: 60%;
@@ -212,7 +225,7 @@ h1 {
 /* FOOTER */
 
 footer {
-    background-color: #323232;
+    margin-top: 8em;
     color: #000;
     width: 100%;
     height: 3em;
@@ -224,15 +237,69 @@ footer {
 }
 
 .easter-egg {
-    color: #323232;
+    color: #2b2b2b;
 }
 .easter-egg:hover {
     color: #fff;
     font-size: small;
 }
 
+/* ------ PORFOLIO PAGE ------ */
+/* Bar info project */
 
-/* RESPONSIVE */
+.bar-portfolio {
+    background-color: red;
+    margin: 2em auto 0;
+    width: 80%;
+    height:1.5em;
+    display: flex;
+    justify-content:center;
+}
+
+.bar-portfolio span {
+    width: 100%;
+    height:100%;
+    font-size:1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark {
+    background-color: #427EA3;
+    color: #97c5e0;
+}
+
+.light {
+    background-color: #529ECC;
+    color: #3e7da5;
+}
+
+/* Project Box */
+
+.portfolio-box {
+    background-color: #fff;
+    width: 80%;
+    margin: 0.5em auto 2em;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.portfolio-box img {
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* --- RESPONSIVE --- */
 
 @media screen and (max-width:539px) { 
 
@@ -267,6 +334,7 @@ footer {
     nav {
         justify-content: center;
         align-items: center;
+        height: 2em;
         margin-bottom: 1em;
     }
 
@@ -322,5 +390,25 @@ footer {
 
 }
 
+@media screen and (max-width:1040px) {
+
+    .bar-portfolio {
+        width: 90%;
+    }
+
+    .portfolio-box {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .portfolio-box img {
+        width: 100%;
+    }
+
+    .portfolio-separation {
+        display:block;
+    }
+
+}
 
 
