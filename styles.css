@@ -39,199 +39,236 @@ header {
     width: 100%;
     height: 20em;
     object-fit: cover;
+}    
+
+/* NAV BAR */
+
+label, #toggle {
+    display: none;
 }
 
-@media screen and (min-width:540px) { 
+nav {
+    background-color: #ffc400;
+    width: 100%;
+    height: 2em;
+    position: relative;
+    margin:-0.5em auto 2em;
+}
 
-    /* NAV BAR */
+nav a {
+    width: 100%;
+    height: 100%;
+    color: #bd8100;
+    text-align: center;
+    align-content: center;
+}
+    
+nav a:hover {
+    background-color: #fdd03e;
+    height:2em;
+    color: #fff;
+}
+
+nav .menu {
+    width: 30em;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+/* PROFILE */
+
+.box {
+    background-color: yellow;
+    width: 100%;
+    margin: 3em auto;
+    display: flex;
+    justify-content: center;
+    gap:1em;
+}
+
+/* PROFILE LEFT SIDE */
+
+.profile-pic {
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 220px;
+    border-radius: 50%;
+    border: 0.5em solid #ffc400;
+    object-fit:cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* PROFILE RIGHT SIDE */
+
+.info {
+    background-color: red;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.current-statut,
+.last-statut {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+
+.current-statut p,
+.last-statut p {
+    display: inline-block;
+    padding-bottom: 0.5em;
+}
+
+.item {
+    padding-right:2em;
+}
+
+.learn {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2px 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+}
+
+.it-skills {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap:0.5em;
+}
+
+.knowledge,
+.tools {
+    width: 50%;
+    display: flex;
+    padding: 0.5em;
+    align-items: center;
+    flex-direction: column;
+    gap:0.5em;
+}
+
+.learn p,
+.knowledge p,
+.tools p {
+    text-align: left;
+}
+
+.logo {
+    width: 38px;
+    height: 38px;
+}
+
+.current-statut,
+.learn,
+.knowledge,
+.tools,
+.last-statut {
+    border-radius: 6px;
+}
+
+.current-statut {
+    background-color: green;
+}
+
+.learn {
+    background-color: brown;
+}
+
+.knowledge {
+    background-color: aqua;
+}
+
+.tools {
+    background-color: pink;
+}
+
+.last-statut {
+    background-color: purple;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #e2e1e1;
+    color: #000;
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-small;
+}
+
+.easter-egg {
+    color: #e2e1e1;
+}
+.easter-egg:hover {
+    color: #000;
+    font-size: small;
+}
+
+
+
+@media screen and (max-width:539px) { 
+
+    .home-image {
+        height: 15em;
+    }
+
+    label {
+        width: 50px;
+        color: #bd8100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; 
+        font-size: x-large; 
+    }
+
+    #toggle:checked + .menu {
+        display: flex;
+    }
 
     nav {
-        background-color: #ffc400;
-        width: 100%;
-        height: 2em;
-        position: relative;
-        margin:-0.5em auto 2em;
-    }
-    
-    nav a {
-        color: #bd8100;
-    }
-    
-    nav a:hover {
-        height:2em;
-        color: #fff;
-    }
-    
-    nav ul {
-        width: 30em;
-        height: 100%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
-    
-    nav li {
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        justify-content: center;
-        align-content: center;
-    }
-    
-    nav ul li:hover {
+
+    nav .menu {
+        display: none;
+        justify-content: flex-start;
+        flex-direction: column;
         background-color: #fdd03e;
-    }
-    
-    h1 {
-        font-size: 4em;
-    }
-    
-    /* PROFILE */
-    
-    .box {
-        background-color: yellow;
         width: 100%;
-        margin: 3em auto;
-        display: flex;
-        justify-content: center;
-        gap:1em;
+        height: 100vh;
     }
-    
-    /* PROFILE LEFT SIDE */
-    
-    .profile-pic {
-        background-color: red;
-        display: flex;
-        align-items: center;
+
+    nav .menu a {
+        color: #fff;
+        height: 5%;
     }
-    
-    .profile-pic img {
-        width: 200px;
-        height: 220px;
-        border-radius: 50%;
-        border: 0.5em solid #ffc400;
-        object-fit:cover;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    
-    /* PROFILE RIGHT SIDE */
-    
-    .info {
-        background-color: red;
-        width: 60%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-        gap: 0.5em;
-    }
-    
-    .current-statut,
-    .last-statut {
-        width: 90%;
-        margin: 0 auto;
-        padding: 1em 2em;
-    }
-    
-    .current-statut p,
-    .last-statut p {
-        display: inline-block;
-        padding-bottom: 0.5em;
-    }
-    
-    .item {
-        padding-right:2em;
-    }
-    
-    .learn {
-        width: 90%;
-        margin: 0 auto;
-        padding: 2px 2em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap:2em;
-    }
-    
-    .it-skills {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        gap:0.5em;
-    }
-    
-    .knowledge,
-    .tools {
-        width: 50%;
-        display: flex;
-        padding: 0.5em;
-        align-items: center;
-        flex-direction: column;
-        gap:0.5em;
-    }
-    
-    .learn p,
-    .knowledge p,
-    .tools p {
-        text-align: left;
-    }
-    
-    .logo {
-        width: 38px;
-        height: 38px;
-    }
-    
-    .current-statut,
-    .learn,
-    .knowledge,
-    .tools,
-    .last-statut {
-        border-radius: 6px;
-    }
-    
-    .current-statut {
-        background-color: green;
-    }
-    
-    .learn {
-        background-color: brown;
-    }
-    
-    .knowledge {
-        background-color: aqua;
-    }
-    
-    .tools {
-        background-color: pink;
-    }
-    
-    .last-statut {
-        background-color: purple;
-    }
-    
-    /* FOOTER */
-    
-    footer {
-        background-color: #e2e1e1;
-        color: #000;
-        width: 100%;
-        height: 3em;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: xx-small;
-    }
-    
-    .easter-egg {
-        color: #e2e1e1;
-    }
-    .easter-egg:hover {
-        color: #000;
-        font-size: small;
-    }
-    
+
+
 }
 
 
