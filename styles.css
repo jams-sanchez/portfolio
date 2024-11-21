@@ -134,14 +134,14 @@ h4 {
 }
 
 .current-statut,
-.last-statut {
+.contact {
     width: 90%;
     margin: 0 auto;
     padding: 1em 2em;
 }
 
 .current-statut p,
-.last-statut p {
+.contact p {
     display: inline-block;
     padding-bottom: 0.5em;
 }
@@ -192,7 +192,7 @@ h4 {
 .learn,
 .knowledge,
 .tools,
-.last-statut {
+.contact {
     border-radius: 6px;
 }
 
@@ -217,9 +217,11 @@ h4 {
     background-color: #d4d4d4;
 }
 
-.last-statut {
+.contact {
     background-color: #7b7b7b;
     color:#474747;
+    display: flex;
+    align-items: center;
 }
 
 /* FOOTER */
@@ -298,6 +300,8 @@ footer {
     align-items: center;
 }
 
+/* ------ CAREER PAGE ------ */
+/*  */
 
 /* --- RESPONSIVE --- */
 
@@ -377,7 +381,7 @@ footer {
     .current-statut,
     .learn,
     .it-skills,
-    .last-statut {
+    .contact {
         width: 95%;
     }
 
