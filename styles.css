@@ -32,8 +32,8 @@ body {
 .portfolio-separation {
     display: none;
     width: 100%;
-    height: 4px;
-    background-color: #97c5e0;
+    height: 2px;
+    background-color: #2B2B2B;
     border:none;
 }
 
@@ -151,6 +151,7 @@ h4 {
 }
 
 .learn {
+    background-color: #d4d4d4;
     width: 90%;
     margin: 0 auto;
     padding: 2px 2em;
@@ -205,10 +206,6 @@ h4 {
     color:#595959;
 }
 
-.learn {
-    background-color: #d4d4d4;
-}
-
 .knowledge {
     background-color: #d4d4d4;
 }
@@ -241,6 +238,7 @@ footer {
 .easter-egg {
     color: #2b2b2b;
 }
+
 .easter-egg:hover {
     color: #fff;
     font-size: small;
@@ -283,25 +281,28 @@ footer {
     background-color: #fff;
     width: 80%;
     margin: 0.5em auto 2em;
-    text-align: center;
     padding: 1em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 .portfolio-box img {
-    width: 47%;
+    width: 49%;
+    object-fit: contain;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* ------ CAREER PAGE ------ */
-/*  */
+
+.bar-portfolio a {
+    color: #3e7da5;
+}
+
 
 /* --- RESPONSIVE --- */
 
@@ -394,7 +395,14 @@ footer {
 
 }
 
-@media screen and (max-width:1040px) {
+@media screen and (max-width:767px) {
+
+    .bar-portfolio {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:539px) {
 
     .bar-portfolio {
         width: 90%;
@@ -413,6 +421,4 @@ footer {
         display:block;
     }
 
-}
-
-
+} 
